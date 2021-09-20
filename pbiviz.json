@@ -1,0 +1,25 @@
+{
+    "visual": {
+        "name": "validationForm",
+        "displayName": "Validation Form",
+        "guid": "validationForm8261EF304F7D4B98A29FC74A7F38CF44",
+        "visualClassName": "Visual",
+        "version": "3.4.3",
+        "description": "Validation Form for RTT Validation",
+        "supportUrl": "graham.fletcher@nhs.net",
+        "gitHubUrl": ""
+    },
+    "apiVersion": "3.5.1",
+    "author": {
+        "name": "Graham Fletcher",
+        "email": "graham.fletcher@nhs.net"
+    },
+    "assets": {
+        "icon": "assets/icon.png"
+    },
+    "externalJS": [],
+    "style": "style/visual.less",
+    "capabilities": "capabilities.json",
+    "dependencies": null,
+    "stringResources": []
+}

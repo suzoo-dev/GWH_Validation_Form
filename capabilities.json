@@ -1,0 +1,102 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Values",
+            "name": "values",
+            "kind": "GroupingOrMeasure"
+        }
+    ],
+    "objects": {
+        "fieldNames":{
+            "displayName": "Field Names",
+            "properties": {
+                "key": {
+                    "displayName": "Key Field Name",
+                    "type": {"text": true}
+                },
+                "user": {
+                    "displayName": "User Field Name",
+                    "type": {"text": true}
+                },
+                "clockStartDate": {
+                    "displayName": "Clock Start Field Name",
+                    "type": {"text": true}
+                },
+                "clockStopDate": {
+                    "displayName": "Clock Stop Field Name",
+                    "type": {"text": true}
+                },
+                "submissionDate": {
+                    "displayName": "Submission Date Field Name",
+                    "type": {"text": true}
+                },
+                "submissionGroup": {
+                    "displayName": "Submission Group Field Name",
+                    "type": {"text": true}
+                }
+            }
+        },
+        "outcomeType": {
+            "displayName": "Outcome Type",
+            "properties": {
+                "useage": {
+                    "displayName": "Useage",
+                    "type": {
+                        "text": true
+                    }
+                }
+            }
+        },
+        "columnHeaders": {
+            "displayName": "Column Headers",
+            "properties": {
+                "backgroundColour": {
+                    "displayName": "Background Colour",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fontColour": {
+                    "displayName": "Font Colour",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fontFamily": {
+                    "displayName": "Font Family",
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "fontSize": {
+                    "displayName": "Font Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "table": {
+                "rows": {
+                    "for": { "in": "values" },
+                    "dataReductionAlgorithm": { "top": { "count": 30000}}
+                }
+            }
+        }
+    ]
+}
